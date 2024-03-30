@@ -12,7 +12,10 @@
 .mh-165px{
     min-height: 165px;
 }
-
+.text-justified{
+    text-align: justify;
+    display: inline-block;
+}
 .back-to-top {
     position: fixed;
     display: none;
