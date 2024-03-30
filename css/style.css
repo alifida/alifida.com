@@ -9,8 +9,10 @@
 .mh-160px{
     min-height: 160px;
 }
-.mh-165px{
-    min-height: 165px;
+.card-wrapper{
+     
+
+    padding: 0rem 0rem  0.25rem  0.0rem  !important;
 }
 .text-justified{
     text-align: justify;
