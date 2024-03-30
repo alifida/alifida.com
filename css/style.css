@@ -6,6 +6,13 @@
     --dark: #12141D;
 }
 
+.mh-160px{
+    min-height: 160px;
+}
+.mh-165px{
+    min-height: 165px;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -103,10 +110,11 @@
 }
 
 
-/*** Header ***/
 #home {
     margin-bottom: 6rem;
-    background: url(../img/bg-header.png) left top no-repeat;
+    background: url('../img/bg-header.webp') left top no-repeat;
+    background-position:bottom ;
+    background-size: cover;
 }
 
 .typed-cursor {
@@ -206,6 +214,64 @@
     opacity: 1;
 }
 
+
+
+
+.btn-linkedin {
+    position: relative;
+    display: block;
+    box-sizing: content-box;
+    width: 16px;
+    height: 26px;
+    border-radius: 100%;
+    border: none;
+    outline: none !important;
+    padding: 18px 20px 20px 28px;
+    background: var(--primary);
+}
+
+.btn-linkedin:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: var(--primary);
+    border-radius: 100%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.btn-linkedin:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 100%;
+    transition: all 200ms;
+}
+
+.linkedin-icon {
+    display: block;
+    position: relative;
+    z-index: 3;
+    background-image: url(../img/linkedin-svgrepo-com.svg);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    left: 25%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+}
 
 /*** About ***/
 #about .years .display-1 {
